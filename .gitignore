@@ -13,10 +13,8 @@ erl_crash.dump
 # Generated docs
 /doc
 
-# Since we are building assets from web/static,
-# we ignore priv/static and priv/server.
-/priv/static/
-/priv/server/
+# Since we are building assets from web/static, we ignore priv/assets.
+/priv/assets/
 
 # The config/prod.secret.exs file by default contains sensitive
 # data and you should not commit it into version control.

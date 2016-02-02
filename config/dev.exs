@@ -17,25 +17,29 @@ config :pwrb, Pwrb.Endpoint,
               "--config", "webpack.client.js",
               "--watch-stdin",
               "--progress",
-              "--colors"]},
+              "--colors",
+              "--devtool", "source-map"
+    ]},
     {"node", ["node_modules/webpack/bin/webpack.js",
               "--config", "webpack.server.js",
               "--watch-stdin",
               "--progress",
-              "--colors"]}
+              "--colors",
+              "--devtool", "source-map"
+    ]}
   ]
 
 # Reload react server-bundle when updated
 config :pwrb, Pwrb.ReactIo,
   watch_files: [
-    Path.join([__DIR__, "../priv/server/index.js"])
+    Path.join([__DIR__, "../priv/assets/server/index.js"])
   ]
 
 # Watch static and templates for browser reloading.
 config :pwrb, Pwrb.Endpoint,
   live_reload: [
     patterns: [
-      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      ~r{priv/assets/static/.*(js|css|png|jpeg|jpg|gif|svg|map)$},
       ~r{priv/gettext/.*(po)$},
       ~r{web/views/.*(ex)$},
       ~r{web/templates/.*(eex)$}

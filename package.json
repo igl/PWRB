@@ -1,14 +1,24 @@
 {
   "name": "pwrb",
   "author": "Richard Keil",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url" : "git://github.com/igl/PWRB.git"
+    "url": "git://github.com/igl/PWRB.git"
+  },
+  "engines": {
+    "node": ">=4.2.0"
   },
   "dependencies": {
     "react": "0.14.6",
     "react-dom": "0.14.6",
-    "react-stdio": "2.0.7"
+    "react-redux": "4.0.6",
+    "react-router": "2.0.0-rc5",
+    "react-stdio": "2.0.7",
+    "redux": "3.0.6",
+    "redux-multi": "0.1.12",
+    "redux-string": "1.0.1",
+    "redux-thunk": "1.0.3"
   },
   "devDependencies": {
     "babel-core": "6.4.5",
@@ -18,8 +28,16 @@
     "babel-preset-react": "6.3.13",
     "babel-preset-stage-2": "6.3.13",
     "copy-webpack-plugin": "1.0.0",
+    "css-loader": "0.23.1",
     "extract-text-webpack-plugin": "1.0.1",
-    "milligram-stylus": "1.0.0",
+    "jeet": "6.1.2",
+    "null-loader": "0.1.1",
+    "redux-devtools": "3.0.1",
+    "redux-devtools-dock-monitor": "1.0.1",
+    "redux-devtools-log-monitor": "1.0.2",
+    "style-loader": "0.13.0",
+    "stylus": "0.53.0",
+    "stylus-loader": "1.5.1",
     "webpack": "1.12.11"
   }
 }
