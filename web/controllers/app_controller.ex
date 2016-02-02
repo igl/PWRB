@@ -5,7 +5,7 @@ defmodule Pwrb.AppController do
     props = %{}
     message = Map.get(params, "message")
     if message, do: props = Map.put(props, :message, message)
-    result = Pwrb.ReactIo.json_call!(%{ component: "./priv/server/index.js", props: props })
+    result = Pwrb.ReactIo.json_call!(%{ component: "./priv/assets/server/index.js", props: props })
     render conn, "index.html", html: result["html"], props: props
   end
 end
