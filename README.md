@@ -1,12 +1,16 @@
-# PWRB Boilerplate
+# PWRB Boilerplate (WIP)
 
-Stack:
+## Goal
 
 - Phoenix
 - Webpack
-- React
-- Stylus ([milligram](http://milligram.github.io/) css included)
+- React (Server-Rendered)
+- React-Router (2.0)
+- Redux (\w Ducks Pattern)
+- Stylus + Jeet + (skeleton.css - grid)
 
+
+## Installation
 
 To start your Phoenix app:
 
@@ -15,8 +19,8 @@ To start your Phoenix app:
   3. Start Phoenix endpoint with `mix phoenix.server`
   4. Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+
 
 ## Learn more
 
@@ -25,3 +29,10 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+
+## Tools
+
+  * [Redux Developer Tools for Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+  * [React Developer Tools for Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+  * [React Developer Tools for Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
